@@ -1,0 +1,325 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+}
+header a {
+  font-size: 3rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  font-family: 'Cuprum', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  width: 13rem;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../img/kirsty-tg-pKo6tevKg4c-unsplash (1).jpg');
+  background-size: cover;
+}
+.welcome h1 {
+  font-family: 'Covered By Your Grace', cursive;
+  text-shadow: 10px 2px 2px #e03000;
+  color: white;
+  font-size: 9rem;
+  padding: 2rem;
+}
+.welcome p {
+  font-family: 'Covered By Your Grace', cursive;
+  text-shadow: 10px 2px 2px #e03000;
+  color: white;
+  font-size: 4rem;
+  padding: 1rem;
+}
+.welcome button {
+  font-family: 'Cuprum', sans-serif;
+  text-decoration: none;
+  font-size: 3rem;
+  width: 40rem;
+  height: 7rem;
+  border-radius: 8px;
+  background-color: #75c8ae;
+  color: white;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #75c8ae;
+  padding: 2rem;
+}
+footer .bottom-logo {
+  margin-right: 10rem;
+  width: 10rem;
+  border-radius: 50px;
+}
+footer .bottom-logo .logo-bottom {
+  border-radius: 50px;
+}
+footer .site-link {
+  margin-right: 10rem;
+  border: solid red;
+}
+footer .site-link a {
+  font-size: 2rem;
+  padding: 1rem;
+  font-family: 'Cuprum', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+footer .site-link p {
+  padding: 2rem;
+}
+.container .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #cde7df;
+}
+.container .content-section .top-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.container .content-section .top-pic1 {
+  width: 48%;
+  padding-left: 1%;
+}
+.container .content-section img {
+  border-radius: 10px;
+}
+.container .middle-content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.container .middle-content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.container .middle-pic {
+  width: 48%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-left: 0;
+}
+.container .middle-pic img {
+  border-radius: 10px;
+}
+.container .bottom-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  background: #cde7df;
+}
+.container .bottom-content .feature {
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.container .bottom-content .features {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem;
+  padding-top: 20px;
+}
+.container .bottom-content .features .bottom {
+  width: 30%;
+  margin-bottom: 30px;
+}
+button {
+  border-radius: 1em;
+  height: 4rem;
+  width: 15rem;
+  font-size: 2rem;
+  background-color: #75c8ae;
+  color: white;
+}
+button .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
