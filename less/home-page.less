@@ -1,18 +1,43 @@
 .container {
-  // border: solid red;
+  @media @mobile {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid red;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background: #cde7df;
+    @media @mobile {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
     .top-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        // border: 1px solid red;
+      }
     }
     .top-pic1 {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+        // border: 1px solid red;
+      }
     }
     img {
       border-radius: 10px;
@@ -23,10 +48,23 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 30px;
-    // border: 1px solid purple;
+    //border: 1px solid purple;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      width: 100%;
+      // border: 1px solid red;
+    }
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 8rem;
+        width: 75%;
+      }
     }
   }
   .middle-pic {
@@ -34,6 +72,14 @@
     padding-left: 1%;
     padding-right: 1%;
     padding-left: 0;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      width: 100%;
+      // border: 1px solid red;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -41,14 +87,28 @@
   .bottom-content {
     padding-top: 30px;
     padding-bottom: 30px;
+    margin: 30px 0;
     display: flex;
     flex-direction: column;
     background: #cde7df;
-    // border: 1px solid green;
+    //border: 1px solid green;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      width: 100%;
+      // border: 1px solid red;
+    }
     .feature {
       font-size: 10rem;
       display: flex;
       justify-content: center;
+      @media @mobile {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10rem;
+        justify-content: center;
+      }
     }
 
     .features {
@@ -56,6 +116,13 @@
       justify-content: space-between;
       padding: 8rem;
       padding-top: 20px;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        // border: 1px solid red;
+      }
 
       .bottom {
         width: 30%;

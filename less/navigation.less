@@ -1,63 +1,72 @@
 header {
   display: flex;
   flex-direction: column;
+  @media @mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    //border: solid red;
+  }
 
-  div {
+  .top {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0;
+  }
 
   nav {
     display: flex;
-
     text-decoration: none;
     width: 100%;
-  }
-  a {
-    font-size: 3rem;
-    margin-left: 3rem;
-    margin-top: 2rem;
-    font-family: 'Cuprum', sans-serif;
-    text-decoration: none;
-    color: black;
+    @media @mobile {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      border: solid red;
+    }
+
+    a {
+      .aa();
+      @media @mobile {
+        font-size: 2rem;
+        margin-left: 1rem;
+        width: 100%;
+        //border: solid red;
+      }
+    }
   }
 }
 .logo {
   width: 13rem;
+  @media @mobile {
+    display: none;
+  }
+  img.logo {
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 5rem;
+      //border: solid red;
+    }
+  }
 }
 .welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: url('../img/kirsty-tg-pKo6tevKg4c-unsplash (1).jpg');
-  background-size: cover;
+  .we();
 
   h1 {
-    font-family: 'Covered By Your Grace', cursive;
-    text-shadow: 10px 2px 2px #e03000;
-    color: white;
-    font-size: 9rem;
-    padding: 2rem;
+    .h11();
   }
   p {
-    font-family: 'Covered By Your Grace', cursive;
-    text-shadow: 10px 2px 2px #e03000;
-    color: white;
-    font-size: 4rem;
-    padding: 1rem;
+    .pp();
     // border: solid red;
   }
   button {
-    font-family: 'Cuprum', sans-serif;
-    text-decoration: none;
-    font-size: 3rem;
-    width: 40rem;
-    height: 7rem;
-    border-radius: 8px;
-    background-color: #75c8ae;
-    color: white;
+    .buttonc(center, center);
   }
 }
