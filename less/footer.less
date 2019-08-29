@@ -4,28 +4,112 @@ footer {
   width: 100%;
   background-color: @mediumaquamarine;
   padding: 2rem;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    padding: 0;
+    //border: solid red;
+  }
   // border: solid red;
   .bottom-logo {
-    margin-right: 10rem;
-    // border: solid red;
-    width: 10rem;
-    border-radius: 50px;
+    @media @mobile {
+      display: flex;
+      flex-direction: row;
+      margin-right: 10rem;
+      width: 100%;
+    }
+    .copyright {
+      //padding: 2rem;
+      @media @mobile {
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        width: 20rem;
+        padding: 1rem;
+
+        @media @mobile {
+          display: flex;
+          justify-content: center;
+          font-size: 1rem;
+          width: 100%;
+          padding: 2 0 0 0;
+        }
+      }
+    }
     .logo-bottom {
+      margin-left: 5rem;
+      width: 10rem;
       border-radius: 50px;
+      padding: 1px;
+      @media @mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 2rem;
+        width: 10rem;
+        padding: 2rem;
+      }
     }
   }
   .site-link {
     margin-right: 10rem;
-    // border: solid red;
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      font-size: 2rem;
+      //border: solid red;
+    }
+    .site {
+      display: flex;
+      justify-content: center;
+      font-size: 1rem;
+      padding: 2rem;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    nav {
+      @media @mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
     a {
       font-size: 2rem;
       padding: 1rem;
       font-family: 'Cuprum', sans-serif;
       text-decoration: none;
       color: @font-color;
+      @media @mobile {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        width: 100%;
+        //border: solid red;
+      }
     }
-    p {
-      padding: 2rem;
+  }
+}
+.icon-list {
+  padding: 2rem;
+  .get {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 2rem;
+    h1 {
+      font-size: 2rem;
+    }
+    .sharethis-inline-share-buttons {
+      padding: 3rem;
     }
   }
 }

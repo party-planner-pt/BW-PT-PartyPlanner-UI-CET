@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    border: 1px solid red;
+    //border: 1px solid red;
   }
 
   .content-section {
@@ -94,7 +94,7 @@
     //border: 1px solid green;
     @media @mobile {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       flex-wrap: wrap;
       width: 100%;
       // border: 1px solid red;
@@ -119,14 +119,24 @@
       @media @mobile {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
         flex-wrap: wrap;
+        padding: 2rem;
         width: 100%;
-        // border: 1px solid red;
       }
 
       .bottom {
         width: 30%;
         margin-bottom: 30px;
+        @media @mobile {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          //flex-wrap: wrap;
+          padding: 2rem;
+          width: 100%;
+        }
       }
     }
   }
