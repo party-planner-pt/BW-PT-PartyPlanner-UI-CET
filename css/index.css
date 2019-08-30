@@ -375,8 +375,11 @@ footer .site-link a {
 }
 @media (max-width: 500px) {
   footer .site-link a {
+    display: flx;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
-    margin-left: 1rem;
+    padding: 1px;
     width: 100%;
   }
 }
@@ -557,10 +560,46 @@ button .btn {
   justify-content: center;
   align-items: center;
 }
-.aboutUs {
+.container .aboutUs {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.17);
   padding: 20px;
 }
-.aboutUs h1 {
+.container .aboutUs h1 {
   padding: 25px;
+}
+.container .pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  background: #cde7df;
+  width: 100%;
+}
+.container .pics .profile-container {
+  display: flex;
+  justify-content: space-around;
+  height: 40rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background: white;
+  margin: 0 5px 5px 0;
+  border: 2px solid #75c8ae;
+}
+.container .pics .profile-container .carlos-pic {
+  width: 20rem;
+}
+.container .pics .profile-container .Denton-pic {
+  width: 20rem;
+}
+.container .pics .profile-container .Rash-pic {
+  width: 20rem;
+}
+.container .pics .profile-container .Jacqueline-pic {
+  width: 20rem;
+}
+.container .pics .profile-container .Trey-pic {
+  width: 20rem;
+}
+.container .pics .profile-container .Winnie-pic {
+  width: 20rem;
 }
