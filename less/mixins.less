@@ -1,0 +1,46 @@
+//mixins
+.we() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../img/kirsty-tg-pKo6tevKg4c-unsplash (1).jpg');
+  background-size: cover;
+}
+.aa() {
+  font-size: 3rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  font-family: 'Cuprum', sans-serif;
+  text-decoration: none;
+  color: @font-color;
+}
+.h11() {
+  font-family: 'Covered By Your Grace', cursive;
+  text-shadow: 10px 2px 2px @shadow;
+  color: white;
+  font-size: 9rem;
+  padding: 2rem;
+}
+.pp() {
+  font-family: 'Covered By Your Grace', cursive;
+  text-shadow: 10px 2px 2px @shadow;
+  color: white;
+  font-size: 4rem;
+  padding: 1rem;
+}
+//parametric mixins
+.buttonc(@justify,@align) {
+  font-family: 'Cuprum', sans-serif;
+  text-decoration: none;
+  font-size: 3rem;
+  width: 40rem;
+  height: 7rem;
+  border-radius: 8px;
+  background-color: @button-bg;
+  color: @white;
+  @media @mobile {
+    width: 100%;
+  }
+}
