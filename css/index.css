@@ -504,6 +504,15 @@ footer .site-link a {
     width: 100%;
   }
 }
+.container .bottom-content .signup {
+  padding: 2rem;
+}
+.container .bottom-content .login {
+  padding: 2rem;
+}
+.container .bottom-content .share {
+  padding: 2rem;
+}
 .container .bottom-content .feature {
   font-size: 10rem;
   display: flex;
@@ -580,7 +589,7 @@ button .btn {
   justify-content: space-around;
   height: 40rem;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 10px;
   background: white;
   margin: 0 5px 5px 0;
   border: 2px solid #75c8ae;
@@ -588,18 +597,54 @@ button .btn {
 .container .pics .profile-container .carlos-pic {
   width: 20rem;
 }
+.container .pics .profile-container .carlos-pic i {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
 .container .pics .profile-container .Denton-pic {
   width: 20rem;
+}
+.container .pics .profile-container .Denton-pic i {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
 }
 .container .pics .profile-container .Rash-pic {
   width: 20rem;
 }
+.container .pics .profile-container .Rash-pic i {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
 .container .pics .profile-container .Jacqueline-pic {
   width: 20rem;
+}
+.container .pics .profile-container .Jacqueline-pic h4 {
+  width: 30rem;
+}
+.container .pics .profile-container .Jacqueline-pic i {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
 }
 .container .pics .profile-container .Trey-pic {
   width: 20rem;
 }
+.container .pics .profile-container .Trey-pic i {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
 .container .pics .profile-container .Winnie-pic {
   width: 20rem;
+}
+.container .pics .profile-container .Winnie-pic i {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
+i:hover {
+  background: white;
 }
